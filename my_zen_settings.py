@@ -20,7 +20,7 @@ my_zen_settings = {
 			'azinput-text1':' <label for="fn">Name</label> <input id="fn" type="text" name="Firstname" value=""> ',
 			'azinput-text2':'<input type="text" title="site search" name="query" id="q" value="">',
 			'azinput-radio1':'<input id="yes" name="request" value="yes" type="radio"> <label for="yes">Yes</label>\n'+ 
-							'<input id="no" name="request" value="no" type="radio"> <label for="no">No</label>',
+							 '<input id="no" name="request" value="no" type="radio"> <label for="no">No</label>',
 			'azinput-radio2':'<input id="yes" name="request" value="yes" type="radio" title="yes"> \n'+ 
 							'<input id="no" name="request" value="no" type="radio" title="no"> ',				
 			'aztable1':'<table> \n'+ 
