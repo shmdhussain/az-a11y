@@ -30,14 +30,14 @@ module.exports = function(grunt) {
 		
 		
 		//our LESS options
-		// less: {
-		  // development: {
-			// files: {
-			  // "lib/custom/custom-bootstrap.css": "lib/custom/custom-bootstrap.less"
-			// }
-		  // }
+		less: {
+		  development: {
+			files: {
+			  "build/css/app.css": "build/css/app.less"
+			}
+		  }
 		  
-		// },
+		},
 		
 		connect: {
 		server: {
@@ -47,14 +47,13 @@ module.exports = function(grunt) {
 			keepalive:true
 		  }
 		}
+	  },
+	  watch: {
+		  css: {
+			files: 'build/css/*.less',
+			tasks: ['less']
+		  }
 	  }
-	  // watch: {
-		  // css: {
-			// files: 'lib/custom/*.less',
-			// tasks: ['less']
-			
-		  // }
-	  // }
 		
 		
     });
@@ -63,12 +62,12 @@ module.exports = function(grunt) {
     // grunt.loadNpmTasks('grunt-contrib-jshint');
 	// grunt.loadNpmTasks('grunt-contrib-concat');
     // grunt.loadNpmTasks('grunt-contrib-uglify');
-	// grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-connect');
-	// grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	
 	//default tasks to run
-    grunt.registerTask('default', ['connect']);
+    grunt.registerTask('default', ['connect','less']);
     //grunt.registerTask('minus', ['concat', 'uglify','less','connect']);
 	
 	

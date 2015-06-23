@@ -4,20 +4,30 @@
 	<head>
 		<title>AZ A11y Start Page</title>
 		<meta charset="utf-8"/>
-		
 		<link rel="stylesheet" href="css/app.css">
 	</head>
 
 	<body>
+		<header>
+			<h1>az-a11y Project</h1>
+			<nav>
+				<a href="#">Basic-Tags</a>
+				<a href="#">UI-Component-Snippets</a>
+			</nav>
+		</header>
 		
-		<nav data-ng-app="az-a11y-Search">
-			
-		</nav>
+		<div class="main_estate" data-ng-app="az-a11y-search">
+			<div ui-view></div>
+		</div>
 		
-		<section>
-		
-		
-		</section>
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/angular.js"></script>
+		<script src="lib/angular-resource.js"></script>
+		<script src="lib/angular-ui-router.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/services.js"></script>
+		<script src="js/ctrl.js"></script>
 		
 	</body>
 

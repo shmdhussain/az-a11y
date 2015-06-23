@@ -1,0 +1,15 @@
+<nav class="search_widget" >
+	<div>
+		<label for="searchUIComponent">Search UI Component: </label> <input id="searchUIComponent" type="text" name="Firstname" value=""> 
+	</div>
+	<ul>
+		<li ng-repeat="item in data" class="az-ally-component">
+			<a ui-sref="basic-snippet.{{item.myhref}}" data-ng-bind="item.content"></a>
+		</li>
+	</ul>
+</nav>
+			
+<section class="content_estate" ui-view>
+
+
+</section>
