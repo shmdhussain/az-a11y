@@ -24,6 +24,12 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 			
 			//controller:'basicsnippetCtrl',
             templateUrl: 'descriptions/aza.html'
+        })
+		.state('basic-snippet.abbr', {
+            url: '/basic-snippet-anchorTag',
+			
+			//controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/aza.html'
         });
         
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================

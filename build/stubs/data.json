@@ -1,47 +1,47 @@
 {
 	"data": [
 		{
-			"content": "&lt;a&gt; <span class='om'> - Tag</span>",
+			"content": "<a>  - Tag",
 			"tags": "['anchor','a','link']",
 			"myhref": "anchor"
 		},
 		{
-			"content": "&lt;abbr&gt; <span class='om'> - Tag</span>",
+			"content": "<abbr>  - Tag",
 			"tags": "['abbrevation','abbr']",
 			"myhref": "abbr"
 		},
 		{
-			"content": "&lt;img&gt; Type 1<span class='om'> - Tag</span>",
+			"content": "<img> Type 1 - Tag",
 			"tags": "['img','image']",
 			"myhref": "imageType2"
 		},
 		{
-			"content": "&lt;img&gt; Type 2<span class='om'> - Tag</span>",
+			"content": "<img> Type 2 - Tag",
 			"tags": "['anchor','a','link','img','image']",
 			"myhref": "imageType2"
 		},
 		{
-			"content": "&lt;html&gt; <span class='om'> - Simple html5 page</span>",
+			"content": "<html>  - Simple html5 page",
 			"tags": "['html']",
 			"myhref": "html5Template"
 		},
 		{
-			"content": "&lt;input type='checkbox'&gt;",
+			"content": "<input type='checkbox'>",
 			"tags": "['input','form','checkbox']",
 			"myhref": "inputCheckbox"
 		},
 		{
-			"content": "&lt;input type='radio'&gt;",
+			"content": "<input type='radio'>",
 			"tags": "['input','form','radio','radiobox']",
 			"myhref": "inputRadio"
 		},
 		{
-			"content": "&lt;input type='text'&gt;",
+			"content": "<input type='text'>",
 			"tags": "['input','form','text','textbox']",
 			"myhref": "inputText"
 		},
 		{
-			"content": "&lt;input type='text'&gt;",
+			"content": "<table>",
 			"tags": "['table']",
 			"myhref": "table"
 		}

@@ -1,9 +1,9 @@
 <nav class="search_widget" >
 	<div>
-		<label for="searchUIComponent">Search UI Component: </label> <input id="searchUIComponent" type="text" name="Firstname" value=""> 
+		 <input title="Search UI Component" class="myform-control" id="searchUIComponent" placeholder="Search UI Component" ng-model="searchUIComponent" type="text" name="Firstname" value=""> 
 	</div>
 	<ul>
-		<li ng-repeat="item in data" class="az-ally-component">
+		<li  ng-repeat="item in data | filter:searchUIComponent" class="az-ally-component">
 			<a ui-sref="basic-snippet.{{item.myhref}}" data-ng-bind="item.content"></a>
 		</li>
 	</ul>

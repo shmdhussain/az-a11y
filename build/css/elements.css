@@ -1,0 +1,191 @@
+/*START: These Styles are for displaying the Page, no connection to the element*/
+/*Reset Styles*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Coloring Themes*/
+/*#351330;*/
+/*#F9F2E7;*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: helvetica, arial, sans-serif;
+}
+.app {
+  height: 100vh;
+  background: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+/**
+ * Note that this demo will actually work fine in IE10. This is because in IE10, flex-shrink is 0 instead of 1.  See: https://github.com/philipwalton/flexbugs#6-the-default-flex-value-has-changed
+ **/
+.header {
+  height: 50px;
+  flex-shrink: 0;
+  background: #45ada8;
+  text-align: center;
+  color: #f4ead5;
+}
+/**
+ * 1. IE9-11 do not support main el, so display: block is needed.
+ * 2. IE10 sets flex-shrink to zero. This was originally according to spec, but has since changed. See: https://github.com/philipwalton/flexbugs#6-the-default-flex-value-has-changed
+ **/
+.main {
+  display: block;
+  /* 1 */
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* 2 */
+  background: #fff;
+  overflow: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  height: 50px;
+  flex-shrink: 0;
+  background: #45ada8;
+  text-align: center;
+  color: #f4ead5;
+  font-size: 24px;
+}
+h1 {
+  font-size: 24px;
+}
+p {
+  font-size: 16px;
+}
+/*END: These Styles are for displaying the Page, no connection to the element*/

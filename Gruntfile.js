@@ -33,7 +33,9 @@ module.exports = function(grunt) {
 		less: {
 		  development: {
 			files: {
-			  "build/css/app.css": "build/css/app.less"
+			  "build/css/app.css": "build/css/app.less",
+			  "build/css/elements.css": "build/css/elements.less"
+			  
 			}
 		  }
 		  
