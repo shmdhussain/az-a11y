@@ -11,11 +11,11 @@ myApp.directive('mytoggle',function(){
 	}
 });
 
-myApp.directive('prettyDir',function(){
-	console.log("inside prettyDir");
+myApp.directive('prismcode',function(){
+	console.log("inside prismcode");
 	return{
 		link: function(scope, elem, attrs) {
-			prettyPrint();
+            Prism.highlightElement(elem.get(0));
 		}
 	}
 });

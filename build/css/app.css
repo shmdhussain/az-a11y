@@ -197,6 +197,7 @@ header {
   left: 0;
   position: fixed;
   font-family: "Lucida Console";
+  z-index: 1;
 }
 header h1 {
   margin: 20px 0 10px 0px;
@@ -369,4 +370,12 @@ header nav a:active {
     width: 25%;
     margin: 15px 0 0 15px;
   }
+}
+.description .content .smallCont .zensyntax {
+  padding: 10px 10px 10px 20px;
+  border: 1px solid #45ada8;
+  font-style: italic;
+  color: #f4ead5;
+  background: #45ada8;
+  font-weight: bold;
 }

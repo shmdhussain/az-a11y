@@ -19,6 +19,12 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 			controller:'basicsnippetCtrl',
             templateUrl: 'partials/basic-snippet.html'
         })
+		.state('how-to-use-zen-coding', {
+            url: '/how-to-use-zen-coding',
+			
+			//controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/how-to-use-zen-coding.html'
+        })
 		.state('basic-snippet.anchor', {
             url: '/basic-snippet-anchorTag',
 			
