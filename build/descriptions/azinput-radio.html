@@ -1,10 +1,10 @@
 
 
 		<section  class="description" >
-		<!--START  of Type-->
-			<h2 mytoggle>Simple Anchor Tag</h2>
+			<!--START of Type-->
+			<h2 mytoggle>Simple Input Radio Type 1</h2>
 			<div class="content">
-				<p>This is just a simple valid Screen Reader checked anchor tag</p>
+				<p>This is just a simple valid input type Radio</p>
 				<h3>Zen Coding Syntax</h3>
 				<div class="smallCont">
 					<ol type="1">
@@ -16,14 +16,15 @@
 						</li>
 					</ol>
 					<div class="zensyntax">
-						aza
+						azinput-radio1
 					</div>
 				</div>
 				<h3>Code:</h3>
 				<div class="smallCont">
 <pre>
 	<code prismcode class="language-markup">
-&lt;a id="optionalID" class="optionalClass"  title="optionalTitle" href="Product.html" &gt;Product Page&lt;/a&gt;
+&lt;input id="Tea" name="mychoice" value="t" type="checkbox"&gt; &lt;label for="Tea"&gt;Tea&lt;/label&gt;
+&lt;input id="Coffee" name="mychoice" value="c" type="checkbox"&gt; &lt;label for="Coffee"&gt;Coffee&lt;/label&gt;
 	</code>
 </pre>
 				</div>
@@ -31,27 +32,28 @@
 				<div class="smallCont">
 					<ol type="1">
 						<li>
-							href atribute is must and id, class, title attribute are optional 
+							This type have a explicit &lt;label&gt; tag.
 						</li>
 						<li>
-							In angular application or you are not having any navigation link, use <b>javascript:void(0)</b> in href attribute value
+							For attribute of label tag and Id attribute of input tag should match
 						</li>
+						
 					</ol>
 				</div>
 				
 				<h3>Sample Full Page</h3>
 				<div class="smallCont">
 					<p>View Simple Demo in New Tab, only with this element, you can use the new page for any testing</p>
-					<a class="btn btn-default" target="_blank" href="../htmlelements/aza.html" role="button">View Demo</a>
+					<a class="btn btn-default" target="_blank" href="../htmlelements/azinput-radio1.html" role="button">View Demo</a>
 				</div>
 				
 				
 			</div>
 			<!--END of Type-->
 			<!--START of Type-->
-			<h2 mytoggle>Image Wrapped By Anchor Tag</h2>
+			<h2 mytoggle>Simple Input Radio Type 2</h2>
 			<div class="content">
-				<p>This is just an anchor tag wraps the image i.e, click able or navigable Screen Reader checked anchor tag</p>
+				<p>This is just a simple valid input type Radio</p>
 				<h3>Zen Coding Syntax</h3>
 				<div class="smallCont">
 					<ol type="1">
@@ -63,14 +65,15 @@
 						</li>
 					</ol>
 					<div class="zensyntax">
-						aza-img
+						azinput-radio2
 					</div>
 				</div>
 				<h3>Code:</h3>
 				<div class="smallCont">
 <pre>
 	<code prismcode class="language-markup">
-&lt;a id="optionalID" class="optionalClass"  title="optionalTitle" href="Product.html" &gt;&lt;img src="images/Product.jpg" alt="Product page" /&gt; &lt;/a&gt;
+&lt;input id="yes" name="request" value="yes" type="radio" title="yes"&gt;
+&lt;input id="no" name="request" value="no" type="radio" title="no"&gt;
 	</code>
 </pre>
 				</div>
@@ -78,10 +81,10 @@
 				<div class="smallCont">
 					<ol type="1">
 						<li>
-							href atribute is must and id, class, title attribute are optional for anchor tag.
+							This type does not have a explicit &lt;label&gt; tag, but the label is implicitly specified in the title attribute of input tag
 						</li>
 						<li>
-							src and alt attribute with the value is must for image tag inside the anchor tag.
+							Title will read out the value (need not be equal to Id attribute of the input tag)
 						</li>
 					</ol>
 				</div>
@@ -89,11 +92,10 @@
 				<h3>Sample Full Page</h3>
 				<div class="smallCont">
 					<p>View Simple Demo in New Tab, only with this element, you can use the new page for any testing</p>
-					<a class="btn btn-default" target="_blank" href="../htmlelements/aza-img.html" role="button">View Demo</a>
+					<a class="btn btn-default" target="_blank" href="../htmlelements/azinput-radio2.html" role="button">View Demo</a>
 				</div>
 				
 				
 			</div>
-			<!--END  of Type-->
-			
+			<!--END of Type-->
 		</section>

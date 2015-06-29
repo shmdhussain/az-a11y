@@ -19,10 +19,9 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 			controller:'basicsnippetCtrl',
             templateUrl: 'partials/basic-snippet.html'
         })
-		.state('how-to-use-zen-coding', {
-            url: '/how-to-use-zen-coding',
-			
-			//controller:'basicsnippetCtrl',
+		.state('basic-snippet.home', {
+            url: '/',
+			controller:'basicsnippetCtrl',
             templateUrl: 'descriptions/how-to-use-zen-coding.html'
         })
 		.state('basic-snippet.anchor', {
@@ -31,13 +30,41 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 			//controller:'basicsnippetCtrl',
             templateUrl: 'descriptions/aza.html'
         })
-		.state('basic-snippet.abbr', {
-            url: '/basic-snippet-anchorTag',
-			
+		.state('basic-snippet.image', {
+            url: '/basic-snippet-imgTag',
 			//controller:'basicsnippetCtrl',
-            templateUrl: 'descriptions/aza.html'
+            templateUrl: 'descriptions/azimg.html'
+        })
+		.state('basic-snippet.abbr', {
+            url: '/basic-snippet-abbrTag',
+			//controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/azabbr.html'
+        })
+		.state('basic-snippet.html5Template', {
+            url: '/basic-snippet-html5-template',
+			//controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/azhtml.html'
+        })
+		.state('basic-snippet.inputCheckbox', {
+            url: '/basic-snippet-inputCheckbox',
+			//controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/azinput-checkbox.html'
+        })
+		.state('basic-snippet.inputRadio', {
+            url: '/basic-snippet-inputRadio',
+			//controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/azinput-radio.html'
+        })
+		.state('basic-snippet.inputText', {
+            url: '/basic-snippet-inputText',
+			//controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/azinput-text.html'
+        })
+		.state('basic-snippet.table', {
+            url: '/basic-snippet-table',
+			//controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/aztable.html'
         });
-        
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
         // .state('snippet', {
             // // we'll get to this in a bit       

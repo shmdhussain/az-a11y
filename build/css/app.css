@@ -321,7 +321,12 @@ header nav a:active {
   }
 }
 .description {
-  margin: 30px 0 0;
+  margin: 30px 0 0 0;
+}
+@media (min-width: 992px) {
+  .description {
+    margin: 30px 0 0 15px;
+  }
 }
 .description h2 {
   cursor: pointer;
@@ -335,6 +340,10 @@ header nav a:active {
 .description .content p {
   padding: 0 15px;
 }
+.description .content p,
+.description .content ol li {
+  line-height: 1.4;
+}
 .description .content h3 {
   padding: 20px 15px 0;
   color: #45ada8;
@@ -342,6 +351,9 @@ header nav a:active {
 }
 .description .content .smallCont {
   padding: 20px 15px 0;
+}
+.description .content .smallCont:last-child {
+  padding-bottom: 25px;
 }
 .description .content .smallCont ol {
   list-style-type: decimal;

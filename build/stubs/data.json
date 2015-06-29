@@ -2,7 +2,7 @@
 	"data": [
 		{
 			"content": "<a>  - Tag",
-			"tags": "['anchor','a','link']",
+			"tags": "['anchor','a','link','img','image']",
 			"myhref": "anchor"
 		},
 		{
@@ -11,14 +11,9 @@
 			"myhref": "abbr"
 		},
 		{
-			"content": "<img> Type 1 - Tag",
+			"content": "<img> Tag",
 			"tags": "['img','image']",
-			"myhref": "imageType2"
-		},
-		{
-			"content": "<img> Type 2 - Tag",
-			"tags": "['anchor','a','link','img','image']",
-			"myhref": "imageType2"
+			"myhref": "image"
 		},
 		{
 			"content": "<html>  - Simple html5 page",

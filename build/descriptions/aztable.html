@@ -1,10 +1,10 @@
 
 
 		<section  class="description" >
-		<!--START  of Type-->
-			<h2 mytoggle>Simple Anchor Tag</h2>
+			<!--START of Type-->
+			<h2 mytoggle>Simple Table Tag Type-1</h2>
 			<div class="content">
-				<p>This is just a simple valid Screen Reader checked anchor tag</p>
+				<p>This is just a simple valid Screen Reader checked table tag</p>
 				<h3>Zen Coding Syntax</h3>
 				<div class="smallCont">
 					<ol type="1">
@@ -16,14 +16,28 @@
 						</li>
 					</ol>
 					<div class="zensyntax">
-						aza
+						aztable1
 					</div>
 				</div>
 				<h3>Code:</h3>
 				<div class="smallCont">
 <pre>
 	<code prismcode class="language-markup">
-&lt;a id="optionalID" class="optionalClass"  title="optionalTitle" href="Product.html" &gt;Product Page&lt;/a&gt;
+&lt;table&gt;
+	&lt;caption&gt;Cups of coffee consumed&lt;/caption&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th id="header1"&gt;Name&lt;/th&gt;
+			&lt;th id="header2"&gt;Cups&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td headers="header1"&gt;Jack&lt;/td&gt;
+			&lt;td headers="header2"&gt;10&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table
 	</code>
 </pre>
 				</div>
@@ -31,10 +45,10 @@
 				<div class="smallCont">
 					<ol type="1">
 						<li>
-							href atribute is must and id, class, title attribute are optional 
+							ID value of &lt;th&gt; tag and headers attribute value of the corresponding &lt;td&gt; should match.
 						</li>
 						<li>
-							In angular application or you are not having any navigation link, use <b>javascript:void(0)</b> in href attribute value
+							Include &lt;caption&gt; tag just after creating the &lt;th&gt; tag to mention the title of the table.
 						</li>
 					</ol>
 				</div>
@@ -42,16 +56,17 @@
 				<h3>Sample Full Page</h3>
 				<div class="smallCont">
 					<p>View Simple Demo in New Tab, only with this element, you can use the new page for any testing</p>
-					<a class="btn btn-default" target="_blank" href="../htmlelements/aza.html" role="button">View Demo</a>
+					<a class="btn btn-default" target="_blank" href="../htmlelements/aztable1.html" role="button">View Demo</a>
 				</div>
 				
 				
 			</div>
 			<!--END of Type-->
 			<!--START of Type-->
-			<h2 mytoggle>Image Wrapped By Anchor Tag</h2>
+			
+			<h2 mytoggle>Simple Table Tag Type-2</h2>
 			<div class="content">
-				<p>This is just an anchor tag wraps the image i.e, click able or navigable Screen Reader checked anchor tag</p>
+				<p>This is just a simple valid Screen Reader checked table tag</p>
 				<h3>Zen Coding Syntax</h3>
 				<div class="smallCont">
 					<ol type="1">
@@ -63,14 +78,32 @@
 						</li>
 					</ol>
 					<div class="zensyntax">
-						aza-img
+						aztable2
 					</div>
 				</div>
 				<h3>Code:</h3>
 				<div class="smallCont">
 <pre>
 	<code prismcode class="language-markup">
-&lt;a id="optionalID" class="optionalClass"  title="optionalTitle" href="Product.html" &gt;&lt;img src="images/Product.jpg" alt="Product page" /&gt; &lt;/a&gt;
+&lt;table&gt;
+	&lt;caption&gt;Student List&lt;/caption&gt;
+	&lt;tr&gt;
+		&lt;th scope="col"&gt;Name&lt;/th&gt;
+		&lt;th scope="col"&gt;Age&lt;/th&gt;
+		&lt;th scope="col"&gt;Birthday&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th scope="row"&gt;Jackie&lt;/th&gt;
+		&lt;td&gt;5&lt;/td&gt;
+		&lt;td&gt;April 5&lt;/td&gt;
+	&lt;/tr&gt;
+
+	&lt;tr&gt;
+		&lt;th scope="row"&gt;Beth&lt;/th&gt;
+		&lt;td&gt;8&lt;/td&gt;
+		&lt;td&gt;January 14&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
 	</code>
 </pre>
 				</div>
@@ -78,22 +111,22 @@
 				<div class="smallCont">
 					<ol type="1">
 						<li>
-							href atribute is must and id, class, title attribute are optional for anchor tag.
+							Use scope attribute value "row" and "col" judiciously on the table header cells and table value cells.
 						</li>
 						<li>
-							src and alt attribute with the value is must for image tag inside the anchor tag.
+							Include &lt;caption&gt; tag just after creating the &lt;th&gt; tag to mention the title of the table.
 						</li>
+						
 					</ol>
 				</div>
 				
 				<h3>Sample Full Page</h3>
 				<div class="smallCont">
 					<p>View Simple Demo in New Tab, only with this element, you can use the new page for any testing</p>
-					<a class="btn btn-default" target="_blank" href="../htmlelements/aza-img.html" role="button">View Demo</a>
+					<a class="btn btn-default" target="_blank" href="../htmlelements/aztable2.html" role="button">View Demo</a>
 				</div>
 				
 				
 			</div>
-			<!--END  of Type-->
-			
+			<!--END of Type-->
 		</section>
