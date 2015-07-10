@@ -307,12 +307,13 @@ header nav a:active {
   -moz-transition: background 0.3s linear;
   -ms-transition: background 0.3s linear;
   -o-transition: background 0.3s linear;
+  color: #26ade4;
 }
-.main_estate .search_widget .az-ally-component a:visited,
 .main_estate .search_widget .az-ally-component a:focus,
 .main_estate .search_widget .az-ally-component a:hover,
 .main_estate .search_widget .az-ally-component a:active {
   background: #45ADA8;
+  color: #f4ead5;
 }
 @media (min-width: 992px) {
   .main_estate .content_estate {
@@ -342,7 +343,7 @@ header nav a:active {
 }
 .description .content p,
 .description .content ol li {
-  line-height: 1.4;
+  line-height: 1.7;
 }
 .description .content h3 {
   padding: 20px 15px 0;
@@ -390,4 +391,8 @@ header nav a:active {
   color: #f4ead5;
   background: #45ada8;
   font-weight: bold;
+  margin-top: 25px;
+}
+.description .content .smallCont .zensyntax:first-child {
+  margin-top: 15px;
 }

@@ -52,7 +52,7 @@ table {
 /*Coloring Themes*/
 @myprimary:#45ADA8; /*#351330;*/
 @mysecondary:#F4EAD5;/*#F9F2E7;*/
-
+@linkcolor:#26ade4;
 
 @screen-sm:768px;
 @screen-md:992px;
@@ -225,9 +225,12 @@ header{
 				margin-right:10px;
 				border-bottom:1px dashed #c3c3c3;
 				.transition (background .3s linear);
-				&:visited,&:focus,&:hover,&:active{
+				color:@linkcolor;
+				&:focus,&:hover,&:active{
 					background:#45ADA8;
+					color:@mysecondary;
 				}
+				
 			}
 			
 			
@@ -265,7 +268,7 @@ header{
 		font-size:14px;
 		p{padding:0 15px;}
 		
-		p,ol li{line-height:1.4}
+		p,ol li{line-height:1.7}
 		h3{
 			padding:20px 15px 0;
 			color:@myprimary;
@@ -304,6 +307,8 @@ header{
 				color:@mysecondary;
 				background:@myprimary;
 				font-weight:bold;
+				margin-top:25px;
+				&:first-child{margin-top:15px;}
 			}
 		}
 		

@@ -1,6 +1,16 @@
 {
 	"data": [
 		{
+			"content": "Intro To Zen Coding",
+			"tags": "['Intro To Zen Coding']",
+			"myhref": "home"
+		},
+		{
+			"content": "Installation Guide",
+			"tags": "['Installation Guide']",
+			"myhref": "install"
+		},
+		{
 			"content": "<a>  - Tag",
 			"tags": "['anchor','a','link','img','image']",
 			"myhref": "anchor"
@@ -39,6 +49,16 @@
 			"content": "<table>",
 			"tags": "['table']",
 			"myhref": "table"
+		},
+		{
+			"content": "<select>",
+			"tags": "['select','option','dropdown']",
+			"myhref": "select"
+		},
+		{
+			"content": "<button>",
+			"tags": "['button','submit','reset']",
+			"myhref": "button"
 		}
 		
 	]

@@ -9,7 +9,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         
         // HOME STATES AND NESTED VIEWS ========================================
         .state('basic-snippet', {
-            url: '/basic-snippet',
+            url: '',
 			resolve:{
 					dataPromise:function(basicHTMLElementList){
 						console.log("datapromise obj resolve");
@@ -64,6 +64,16 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/basic-snippet-table',
 			//controller:'basicsnippetCtrl',
             templateUrl: 'descriptions/aztable.html'
+        })
+		.state('basic-snippet.select', {
+            url: '/basic-snippet-select',
+			//controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/azselect.html'
+        })
+		.state('basic-snippet.button', {
+            url: '/basic-snippet-button',
+			//controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/azbutton.html'
         });
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
         // .state('snippet', {
