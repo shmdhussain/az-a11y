@@ -2,6 +2,7 @@ module.exports = function(grunt) {
  
     grunt.initConfig({
  
+		
         //our JSHint options
         // jshint: {
             // mine: ['js/*.js'] //files to lint
@@ -20,14 +21,46 @@ module.exports = function(grunt) {
         // },
 		
 		//our uglify options
-        // uglify: {
-            // js: {
-                // files: {
-                    // 'js/script.js': ['js/script.js'] //save over the newly created script
-                // }
-            // }
-        // },
-		
+	   
+	   paths: {
+			src: {
+				myjs: 'build/js/*.js',
+				my_third_party_js: 'build/lib/*.js',
+			},
+			dest: {
+				myjs_dest: 'build/js/myapp.js',
+				my_third_party_js_dest: 'build/lib/thirdparty.js'
+			},
+			thirdparty:{
+				src:'build/lib/'
+			}
+        },
+       uglify: {
+		options: {
+		  mangle: false,
+		  compress: {
+			drop_console: true
+		  }
+		},
+		my_jsfiles: {
+		  options: {
+			sourceMap: true,
+			//sourceMapName: 'path/to/sourcemap.map'
+		  },
+		  files: {
+			'<%= paths.dest.myjs_dest %>': ['<%= paths.src.myjs %>']
+		  }
+		},
+		my_third_party_jsfiles: {
+		  options: {
+			//sourceMap: true,
+			//sourceMapName: 'path/to/sourcemap.map'
+		  },
+		  files: {
+			'<%= paths.dest.my_third_party_js_dest %>': ['<%= paths.thirdparty.src%>jquery.min.js','<%= paths.thirdparty.src%>prism.js','<%= paths.thirdparty.src%>angular.js','<%= paths.thirdparty.src%>angular-resource.js','<%= paths.thirdparty.src%>angular-ui-router.min.js']
+		  }
+		},
+	  },
 		
 		//our LESS options
 		less: {
@@ -35,7 +68,6 @@ module.exports = function(grunt) {
 			files: {
 			  "build/css/app.css": "build/css/app.less",
 			  "build/css/elements.css": "build/css/elements.less"
-			  
 			}
 		  }
 		  
@@ -55,7 +87,11 @@ module.exports = function(grunt) {
 			files: 'build/css/*.less',
 			tasks: ['less']
 		  }
-	  }
+	  },
+	  clean: {
+		  build: ["build/css/elements.css", "build/css/app.css","<%= paths.dest.myjs_dest %>","<%= paths.dest.my_third_party_js_dest %>"],
+		  //release: ["path/to/another/dir/one", "path/to/another/dir/two"]
+	  },
 		
 		
     });
@@ -63,14 +99,16 @@ module.exports = function(grunt) {
     //load our tasks
     // grunt.loadNpmTasks('grunt-contrib-jshint');
 	// grunt.loadNpmTasks('grunt-contrib-concat');
-    // grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	
 	//default tasks to run
-    grunt.registerTask('default', ['connect','less']);
-    //grunt.registerTask('minus', ['concat', 'uglify','less','connect']);
+	
+    grunt.registerTask('default', ['clean:build','less','uglify:my_jsfiles','uglify:my_third_party_jsfiles','connect']);
+    //grunt.registerTask('minus', ['uglify:my_jsfiles','uglify:my_third_party_jsfiles']);
 	
 	
 	//grunt.registerTask('development', ['jshint']);
