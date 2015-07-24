@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 			//sourceMapName: 'path/to/sourcemap.map'
 		  },
 		  files: {
-			'<%= paths.dest.myjs_dest %>': ['<%= paths.src.myjs %>']
+			//'<%= paths.dest.myjs_dest %>': ['<%= paths.src.myjs %>']
 		  }
 		},
 		my_third_party_jsfiles: {
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
 			//sourceMapName: 'path/to/sourcemap.map'
 		  },
 		  files: {
-			'<%= paths.dest.my_third_party_js_dest %>': ['<%= paths.thirdparty.src%>jquery.min.js','<%= paths.thirdparty.src%>prism.js','<%= paths.thirdparty.src%>angular.js','<%= paths.thirdparty.src%>angular-resource.js','<%= paths.thirdparty.src%>angular-ui-router.min.js']
+			'<%= paths.dest.my_third_party_js_dest %>': ['<%= paths.thirdparty.src%>jquery.min.js','<%= paths.thirdparty.src%>prism.js','<%= paths.thirdparty.src%>angular.js','<%= paths.thirdparty.src%>angular-resource.js','<%= paths.thirdparty.src%>angular-animate.js','<%= paths.thirdparty.src%>angular-ui-router.min.js']
 		  }
 		},
 	  },
@@ -84,8 +84,8 @@ module.exports = function(grunt) {
 	  },
 	  watch: {
 		  css: {
-			files: 'build/css/*.less',
-			tasks: ['less']
+			files: ['build/css/*.less','<%= paths.src.myjs %>'],
+			tasks: ['less','uglify:my_jsfiles']
 		  }
 	  },
 	  clean: {

@@ -197,7 +197,7 @@ header {
   left: 0;
   position: fixed;
   font-family: "Lucida Console";
-  z-index: 1;
+  z-index: 2;
 }
 header h1 {
   margin: 20px 0 10px 0px;
@@ -396,3 +396,98 @@ header nav a:active {
 .description .content .smallCont .zensyntax:first-child {
   margin-top: 15px;
 }
+.description .videoCont {
+  margin: 20px 0 0;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.description .videoCont .videoPoster {
+  position: absolute;
+  height: 100%;
+  width: 85%;
+  background-color: rgba(233, 233, 233, 0.7);
+  display: inline-block;
+  z-index: 1;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.description .videoCont .videoPoster:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.description .videoCont .videoPoster.removeBanner {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.description .videoCont .videoPoster .shapeCir {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.description .videoCont .videoPoster .shapeCir:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  .description .videoCont .videoPoster .shapeCir {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+.description .videoCont .videoPoster .shapeCir:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+.description .videoCont .videoPoster .shapeTri {
+  display: inline-block;
+  vertical-align: middle;
+  height: 0;
+  width: 0;
+  border-left: 15px solid #26ade4;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+  margin-left: 30px;
+}
+@media (min-width: 768px) {
+  .description .videoCont .videoPoster .shapeTri {
+    height: 0;
+    width: 0;
+    border-left: 25px solid #26ade4;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid transparent;
+    margin-left: 40px;
+  }
+}
+.description .videoCont video {
+  display: inline-block;
+  width: 85%;
+}
+/*UseFull Mixins*/
+/*Shapes*/
+/*Center both ver and hor*/
+/*Transform and transition*/

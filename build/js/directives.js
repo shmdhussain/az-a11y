@@ -20,4 +20,19 @@ myApp.directive('prismcode',function(){
 	}
 });
 
+myApp.directive('videopost',function(){
+	console.log("inside videopost");
+	return{
+		scope:{},
+		link: function(scope, elem, attrs) {
+            elem.bind("click",function(e){
+				console.log("click");
+				elem.addClass("removeBanner");
+				scope.$apply();
+				e.stopImmediatePropagation();
+			});
+		}
+	}
+});
+
  

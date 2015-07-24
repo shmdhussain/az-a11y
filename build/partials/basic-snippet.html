@@ -3,13 +3,14 @@
 		 <input title="Search UI Component" class="myform-control" id="searchUIComponent" placeholder="Search UI Component" ng-model="searchUIComponent" type="text" name="Firstname" value=""> 
 	</div>
 	<ul>
-		<li  ng-repeat="item in data | filter:searchUIComponent" class="az-ally-component">
+		<li  data-ng-repeat="item in data | filter:searchUIComponent" class="az-ally-component">
 			<a ui-sref="basic-snippet.{{item.myhref}}" data-ng-bind="item.content"></a>
+			
 		</li>
 	</ul>
 </nav>
 			
-<section class="content_estate" ui-view>
+<section role="status" class="content_estate" ui-view>
 	
 	
 

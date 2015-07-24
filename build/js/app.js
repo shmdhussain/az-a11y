@@ -1,4 +1,4 @@
-var myApp = angular.module('az-a11y-search', ['ui.router']);
+var myApp = angular.module('az-a11y-search', ['ui.router','ngAnimate']);
 
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
@@ -21,8 +21,12 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         })
 		.state('basic-snippet.home', {
             url: '/',
-			controller:'basicsnippetCtrl',
             templateUrl: 'descriptions/how-to-use-zen-coding.html'
+        })
+		.state('basic-snippet.install', {
+            url: '/install',
+			controller:'basicsnippetCtrl',
+            templateUrl: 'descriptions/how-to-install-zen-coding.html'
         })
 		.state('basic-snippet.anchor', {
             url: '/basic-snippet-anchorTag',
