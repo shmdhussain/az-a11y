@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 			//sourceMapName: 'path/to/sourcemap.map'
 		  },
 		  files: {
-			//'<%= paths.dest.myjs_dest %>': ['<%= paths.src.myjs %>']
+			'<%= paths.dest.myjs_dest %>': ['<%= paths.src.myjs %>']
 		  }
 		},
 		my_third_party_jsfiles: {
